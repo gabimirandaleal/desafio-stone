@@ -32,3 +32,10 @@ function main(expenseList = [], names = []){
     let totalExpenses = addUpExpenses(expenseList, names);
     return shareExpenses(totalExpenses, names)
 }
+
+let testeExpenses = [{name: "passeio de escuna", amount: 5, unitPrice: 80}, {name: "diaria hotel", amount: 3, unitPrice: 337.99}, {name: "almoço selfservice", amount: 0.757, unitPrice: 45.99}];
+
+let namesTeste = ["joao", "maria", "gabriela", "erick", "julia"];
+
+let namesToPay = main(testeExpenses, namesTeste);
+console.log(namesToPay)
